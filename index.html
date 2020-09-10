@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Foodies</title>
+</head>
+
+<body>
+    <div class="media">
+        <h1>Mobile version is not supported</h1>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <h1>Foodies</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#cat">Categories</a>
+            <a href="#about">About</a>
+            <a href="#social">Social</a>
+        </div>
+    </nav>
+
+    <div class="home-page">
+        <div class="header"></div>
+        <div class="main-home">
+            <div class="left-section">
+                <div class="left-con">
+                    <h1>Hi,</h1>
+                    <h1>Foodies</h1>
+                    <h2>Want a Drink? or Make yourself something special?</h2>
+                    <a href="#">Show Me</a>
+                </div>
+            </div>
+            <div class="img-section">
+                <img src="./Media/Photos/Home.jfif" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="catg-sec" id="cat">
+        <div class="header"></div>
+        <div class="title">
+            <h1>Categories</h1>
+        </div>
+        <div class="card-section">
+            <div class="card" id="card1">
+                <div class="card-img">
+                    <img src="./Media/Photos/Cooking.jfif" alt="">
+                </div>
+                <div class="desc">
+                    <h1>Cooking</h1>
+                </div>
+                <a href="#">Take me there</a>
+            </div>
+            <div class="card" id="card2">
+                <div class="card-img">
+                    <img src="./Media/Photos/Online Food Order.jfif" alt="">
+                </div>
+                <div class="desc">
+                    <h1>Order Online</h1>
+                </div>
+                <a href="#">Take me there</a>
+            </div>
+            <div class="card" id="card3">
+                <div class="card-img">
+                    <img src="./Media/Photos/comparision.jfif" alt="">
+                </div>
+                <div class="desc">
+                    <h1>Comparision</h1>
+                </div>
+                <a href="#">Take me there</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section" id="about">
+        <div class="header"></div>
+        <div class="main-about">
+            <div class="left-about">
+                <img src="./Media/Photos/about.jpg" alt="">
+            </div>
+            <div class="right-about">
+                <div class="title-about">
+                    <h1>About Foodies</h1>
+                </div>
+                <div class="desc-about">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, mollitia omnis. Omnis itaque
+                        aliquam vero ad accusantium nostrum aspernatur repudiandae excepturi a illo quia consectetur
+                        optio debitis quisquam quas voluptates, adipisci, eos ut! Quae corporis placeat deserunt sunt
+                        non nisi delectus facere, doloremque laboriosam! Enim libero culpa et veritatis maxime.
+                    </p>
+                </div>
+                <div class="me">
+                    <p>Made by <a href="#">Ayush Rameja</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-section" id="social">
+        <div class="header"></div>
+        <div class="header-social" id="header"></div>
+        <div class="title">
+            <h1>Social</h1>
+        </div>
+        <div class="main-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+        </div>
+    </div>
+
+    <footer>
+        <h2>Made with love</h2>
+        <a href="#">Ayush Rameja</a>
+    </footer>
+
+
+    <script src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#card1", {
+            scrollTrigger: "#card1",
+            y: -10,
+            opacity: 1,
+            duration: 0.5
+        })
+        gsap.to("#card2", {
+            scrollTrigger: "#card1",
+            y: -10,
+            opacity: 1,
+            duration: 0.70
+        })
+        gsap.to("#card3", {
+            scrollTrigger: "#card1",
+            y: -10,
+            opacity: 1,
+            duration: 1
+        })
+
+        const tlabout = gsap.timeline({
+            scrollTrigger: ".left-about",
+            start: "bottom"
+        })
+
+        tlabout.from(".left-about img", { x: -200, opacity: 0, duration: 1.5 })
+        tlabout.from(".right-about", { y: 200, opacity: 0, duration: 1.5 }, "-=1")
+        // home page animations
+        const tlNav = gsap.timeline({
+            trigger: '.main-home'
+        })
+        tlNav.from(".main-home img", { x: 200, opacity: 0, duration: 1.5 })
+        tlNav.from(".left-section", { y: 100, opacity: 0, duration: 1.5 }, "-=1")
+    </script>
+</body>
+
+</html>
