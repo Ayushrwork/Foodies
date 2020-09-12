@@ -52,6 +52,20 @@ nav{
     text-decoration: underline;
 }
 
+.burger{
+    cursor: pointer;
+    display: none;
+}
+
+.burger > div{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #000;
+    transition: all 0.5s ease;
+}
+
+
 .home-page{
     width: 100%;
     height: 100vh;
@@ -282,9 +296,7 @@ nav{
     font-size: 85px;
 }
 
-
 footer{
-
     width: 100%;
     height: 20vh;
     font-family: 'Grandstander', cursive;
@@ -304,35 +316,81 @@ footer a:hover{
 }
 
 footer h2{
+    font-size: 18px;
     color: white;
 }
 .media{
     display: none;
 }
 
-@media screen and (max-width: 1200px){
-    nav{
+@media screen and (max-width : 1200px){
+    .burger{
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 92vh;
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+        transition:transform 0.5s ease-in-out;
+        transform: translateX(100%);
+    }
+    .image-section{
         display: none;
     }
-    .home-page{
+    .img-section img{
         display: none;
     }
-    .catg-sec{
+    .left-section{
+        width: 100%;
+    }
+    .left-section a{
+        width: 30%;
+    }
+    .card-section{
+        flex-direction: column;
+        height: 150vh;
+    }
+    .card{
+        width: 45vw;
+    }
+    .left-section{
+        width: 100%;
+        height: 100vh;
+    }
+    .left-about{
         display: none;
     }
-    .about-section{
-        display: none;
+    .right-about{
+        width: 100%;
     }
-    .social-section{
-        display: none;
+
+    .main-social a {
+        font-size: 35px;
     }
-    footer{
-        display: none;
-    }
-    .media{
-        display: inline;
-        font-family:poppins ,serif;
-        color: black;
-        text-align: center;
-    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+.toogle .line1 {
+    transform: rotate(-45deg) translate(-5px , 6px);
+}
+.toogle .line2 {
+    opacity: 0;
+}
+.toogle .line3 {
+    transform: rotate(45deg) translate(-5px , -6px);
+}
+
+.sec-page{
+    width: 100%;
+    height: 100vh;
 }
