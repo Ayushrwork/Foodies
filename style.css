@@ -377,6 +377,59 @@ footer h2{
     }
 }
 
+@media screen and (max-width: 400px){
+    
+    .left-section{
+        width: 100%;
+        height: 80vh;
+        background:linear-gradient(#23245D, #EF525B), url(./Media/Photos/Home.jfif);
+        background-position: top center;
+        object-fit: cover;
+        background-blend-mode: luminosity;
+        background-attachment: fixed;
+        filter: background opacity(1);
+    }
+    .left-section h1, h2{
+        color:  white;
+        text-shadow: 5px 5px 5px 5px black;
+    }
+
+    .about-section{
+        background:linear-gradient(#23245D, #EF525B), url(./Media/Photos/about.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        object-fit: cover;
+        background-blend-mode: hard-light;
+        color: white;
+        background-attachment: fixed;
+    }
+
+    .left-section a{
+        background:  #23245D;
+        border-color:  #23245D;
+        margin: 0 auto;
+        align-self: auto;
+    }
+
+    .left-con{
+        width: 100%;
+        height: 80vh;
+        text-align: center;
+    }
+
+    .card-section{
+        height: 170vh;
+    }
+    
+    .card{
+        width: 74vw;
+    }
+    .me a{
+        color: white;
+    }
+
+}
+
 .nav-active{
     transform: translateX(0%);
 }
