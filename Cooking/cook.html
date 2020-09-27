@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cook.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <title>Cooking</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Foodies</h1>
+        </div>
+
+        <div class="burger">
+            <i class="fas fa-hamburger"></i>
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="#" onclick="showPage();">Cooking</a>
+            <a href="#" onclick="showPage();">Order</a>
+            <a href="#" onclick="showPage();">Comparision</a>
+        </div>
+    </nav>
+    <!-- <i class="fas fa-drumstick-bite"></i> -->
+
+
+    <div class="home-page">
+        <div class="header"></div>
+        <video autoplay muted loop id="myVideo">
+            <source src="./media/cook.mp4" type="video/mp4">
+        </video>
+
+        <div class="text-on-video">
+            <div class="text-main">
+                <h1>Wanna Make something good?</h1>
+                <a href="#">Know More</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card-section">
+        <div class="header"></div>
+        <div class="lines">
+            <div class="line">
+                <div class="card" id="card4">
+                    <div class="header-card"></div>
+                    <div class="desc">
+                        <h2>Pre-workout meal</h2>
+                    </div>
+                    <a href="#" id="link-hover">let's go</a>
+                </div>
+                <div class="card" id="card5">
+                    <div class="header-card"></div>
+                    <div class="desc">
+                        <h2>Post-workout meal</h2>
+                    </div>
+                    <a href="#" id="link-hover">let's go</a>
+                </div>
+                <div class="card" id="card6">
+                    <div class="header-card"></div>
+                    <div class="desc">
+                        <h2>Black Bean Pasta</h2>
+                    </div>
+                    <a href="#" id="link-hover">let's go</a>
+                </div>
+            </div>
+            <div class="line">
+                <div class="card" id="card1">
+                    <div class="header-card"></div>
+                    <div class="desc">
+                        <h2>Oats porridge</h2>
+                    </div>
+                    <a href="#" id="link-hover">let's go</a>
+                </div>
+                <div class="card" id="card2">
+                    <div class="header-card"></div>
+                    <div class="desc">
+                        <h2>Egg Sailboats</h2>
+                    </div>
+                    <a href="#" id="link-hover">let's go</a>
+                </div>
+                <div class="card" id="card3">
+                    <div class="header-card"></div>
+                    <div class="desc">
+                        <h2>Boiled Chicken</h2>
+                    </div>
+                    <a href="#" id="link-hover">let's go</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script>
+        // home page animations
+        const tl = gsap.timeline({
+            scrollTrigger: ".home-page"
+        })
+
+        tl.from(".text-main", { y: 100, opacity: 0, duration: 1.5 })
+        tl.from(".home-page video", { y: 50, opacity: 0, duration: .5 }, "-=1")
+
+        // card page animations
+
+        const tlCard = gsap.timeline({
+            scrollTrigger: ".card-section",
+            start: "top 50%"
+        })
+
+        tlCard.from("#card1", { y: 100, opacity: 0, duration: 1 }, "-=0.4")
+        tlCard.from("#card2", { y: 100, opacity: 0, duration: 0.7 }, "-=0.4")
+        tlCard.from("#card3", { y: 100, opacity: 0, duration: 0.7 }, "-=0.4")
+        tlCard.from("#card4", { y: 100, opacity: 0, duration: 0.7 }, "-=0.4")
+        tlCard.from("#card5", { y: 100, opacity: 0, duration: 0.7 }, "-=0.4")
+        tlCard.from("#card6", { y: 100, opacity: 0, duration: 0.7 }, "-=0.4")    
+    </script>
+</body>
+
+</html>

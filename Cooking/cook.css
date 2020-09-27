@@ -1,0 +1,268 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:wght@200;400;800&family=Oswald&family=Poppins:wght@300&family=Roboto:wght@300;500&display=swap");
+:root {
+  --text: Black;
+  --bg: #f4f4f4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+nav {
+  position: relative;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 8px 3px rgba(73, 73, 73, 0.623);
+          box-shadow: 0 0 8px 3px rgba(73, 73, 73, 0.623);
+}
+
+nav .logo {
+  margin-left: 5%;
+}
+
+nav .logo h1 {
+  font-family: 'Grandstander', cursive;
+  font-size: 30px;
+}
+
+nav .burger {
+  margin-right: 5%;
+}
+
+nav .burger .fas {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+nav .nav-links {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  background: #e4e4e4;
+  top: 10vh;
+  right: 0;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.45s ease-in-out;
+  transition: -webkit-transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  font-size: 22px;
+  color: var(--text);
+  font-family: poppins , 'sans-serif';
+}
+
+nav .nav-links a:hover {
+  text-decoration: underline;
+}
+
+nav .nav-links.active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.header {
+  width: 100%;
+  height: 10vh;
+}
+
+.home-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.home-page video {
+  z-index: -1;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.home-page .text-on-video {
+  width: 60%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-page .text-main {
+  width: 100%;
+  height: 30%;
+}
+
+.home-page .text-main h1 {
+  color: #F4f4f4;
+  font-family: poppins;
+  margin: 20px;
+}
+
+.home-page .text-main a {
+  color: #f4f4f4;
+  font-family: poppins;
+  background: blue;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.card-section {
+  width: 100%;
+  height: 100vh;
+}
+
+.card-section .lines {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-section .line {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-section .card {
+  background: white;
+  width: 35vh;
+  height: 35vh;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 5px 3px rgba(32, 32, 32, 0.651);
+          box-shadow: 3px 3px 5px 3px rgba(32, 32, 32, 0.651);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-section .header-card {
+  width: 100%;
+  height: 60%;
+}
+
+.card-section .desc {
+  font-family: poppins,serif;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+}
+
+.card-section .card a {
+  font-family: 'Grandstander', cursive;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: black;
+  background: #f4f4f4;
+  border-radius: 0 0 15px 15px;
+}
+
+.card-section .card a:hover {
+  background: #161616;
+  color: #f4f4f4;
+}
+
+@media screen and (max-width: 1050px) {
+  .card-section {
+    height: 250vh;
+  }
+  .card-section .lines {
+    height: 240vh;
+  }
+  .card-section .lines .line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=cook.css.map */
