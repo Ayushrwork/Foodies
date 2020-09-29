@@ -20,7 +20,6 @@ body {
 }
 
 nav {
-  position: relative;
   position: fixed;
   z-index: 5;
   width: 100%;
@@ -228,6 +227,13 @@ nav .nav-links.active {
 .card-section .header-card {
   width: 100%;
   height: 60%;
+}
+
+.card-section .header-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card-section .desc {
