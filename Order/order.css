@@ -1,0 +1,535 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:wght@200;400;800&family=Oswald&family=Poppins:wght@300&family=Roboto:wght@300;500&display=swap");
+:root {
+  --text: Black;
+  --bg: #f4f4f4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: white;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0 0 8px 3px rgba(73, 73, 73, 0.623);
+  box-shadow: 0 0 8px 3px rgba(73, 73, 73, 0.623);
+}
+
+nav .logo {
+  margin-left: 5%;
+}
+
+nav .logo h1 {
+  font-family: 'Grandstander', cursive;
+  font-size: 30px;
+}
+
+nav .burger {
+  margin-right: 5%;
+}
+
+nav .burger .fas {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+nav .nav-links {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  background: white;
+  top: 10vh;
+  right: 0;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  -webkit-box-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.45s ease-in-out;
+  transition: -webkit-transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  font-size: 22px;
+  color: var(--text);
+  font-family: poppins , 'sans-serif';
+}
+
+nav .nav-links a:hover {
+  text-decoration: underline;
+}
+
+nav .nav-links .nav-links.active {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.nav-links.active {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.header {
+  height: 10vh;
+  width: 100%;
+}
+
+.main-page {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-page .left-section {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-page .left-section h1 {
+  font-size: 55px;
+  font-family: Grandstander;
+}
+
+.main-page .right-section {
+  width: 50%;
+  height: 100%;
+}
+
+.main-page .right-section img {
+  width: 90%;
+  height: 100%;
+  -o-object-fit: contain cover;
+     object-fit: contain cover;
+}
+
+.order-section {
+  width: 100%;
+  height: 500vh;
+}
+
+.order-section .zomato-section,
+.order-section .swiggy-section,
+.order-section .foodpanda-section,
+.order-section .dominos-section,
+.order-section .pizzahut-section {
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+.order-section .zomato-section a,
+.order-section .swiggy-section a,
+.order-section .foodpanda-section a,
+.order-section .dominos-section a,
+.order-section .pizzahut-section a{
+  color: black;
+  
+}
+
+.order-section .zomato-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #CD212F;
+}
+
+.order-section .zomato-section .img-zomato {
+  width: 50%;
+  height: 100%;
+  background: url(./media/Zomato.jpg);
+  background-position: 0%  center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.order-section .zomato-section .text-zomato {
+  width: 50%;
+  height: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-section .zomato-section .text-zomato h1 {
+  color: white;
+  font-family: roboto;
+}
+
+.order-section .zomato-section .text-zomato p, .order-section .zomato-section .text-zomato ul {
+  color: white;
+  width: 80%;
+  margin: auto;
+  font-family: roboto;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.order-section .swiggy-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #F6881F;
+}
+
+.order-section .swiggy-section .img-swiggy {
+  width: 50%;
+  height: 100%;
+  background: url(./media/NSwiggy.jpg);
+  background-position: right 0;
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.order-section .swiggy-section .text-swiggy {
+  width: 50%;
+  height: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-section .swiggy-section .text-swiggy h1 {
+  color: white;
+  font-family: roboto;
+}
+
+.order-section .swiggy-section .text-swiggy p, .order-section .swiggy-section .text-swiggy ul {
+  color: white;
+  width: 80%;
+  margin: auto;
+  font-family: roboto;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.order-section .dominos-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+}
+
+.order-section .dominos-section .img-dominos {
+  width: 50%;
+  height: 100%;
+  background: url(./media/dominos.png);
+  background-position: left 10%;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.order-section .dominos-section .text-dominos {
+  width: 50%;
+  height: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-section .dominos-section .text-dominos h1 {
+  color: black;
+  font-family: roboto;
+}
+
+.order-section .dominos-section .text-dominos p, .order-section .dominos-section .text-dominos ul {
+  color: black;
+  width: 80%;
+  margin: auto;
+  font-family: roboto;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.order-section .pizzahut-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f4f4f4;
+}
+
+.order-section .pizzahut-section .img-pizzahut {
+  width: 50%;
+  height: 100%;
+  background: url(./media/Pizzahut.png);
+  background-position: 100%;
+  background-attachment: fixed;
+  background-size: 40%;
+  background-repeat: no-repeat;
+}
+
+.order-section .pizzahut-section .text-pizzahut {
+  width: 50%;
+  height: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-section .pizzahut-section .text-pizzahut h1 {
+  color: black;
+  font-family: roboto;
+}
+
+.order-section .pizzahut-section .text-pizzahut p, .order-section .pizzahut-section .text-pizzahut ul {
+  color: black;
+  width: 80%;
+  margin: auto;
+  font-family: roboto;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.order-section .foodpanda-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #D61163;
+}
+
+.order-section .foodpanda-section .img-foodpanda {
+  width: 50%;
+  height: 100%;
+  background: url(./media/Foodpanda.png);
+  background-position: left 10%;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.order-section .foodpanda-section .text-foodpanda {
+  width: 50%;
+  height: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-section .foodpanda-section .text-foodpanda h1 {
+  color: white;
+  font-family: roboto;
+}
+
+.order-section .foodpanda-section .text-foodpanda p, .order-section .foodpanda-section .text-foodpanda ul {
+  color: white;
+  width: 100%;
+  margin: auto;
+  font-family: roboto;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 800px) {
+  .main-page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main-page .right-section {
+    width: 100%;
+    height: 50%;
+  }
+  .main-page .left-section {
+    width: 100%;
+    height: 40%;
+  }
+  .order-section .zomato-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .order-section .zomato-section .img-zomato {
+    display: none;
+  }
+  .order-section .zomato-section .text-zomato {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+  }
+  .swiggy-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .swiggy-section .img-swiggy {
+    display: none;
+  }
+  .swiggy-section .text-swiggy {
+    width: 80% !important;
+    margin: auto;
+    height: 100vh;
+  }
+  .dominos-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dominos-section .img-dominos {
+    display: none;
+  }
+  .dominos-section .text-dominos {
+    width: 80% !important;
+    height: 100%;
+  }
+  .pizzahut-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pizzahut-section .img-pizzahut {
+    display: none;
+  }
+  .pizzahut-section .text-pizzahut {
+    width: 80% !important;
+    height: 100%;
+  }
+  .foodpanda-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .foodpanda-section .img-foodpanda {
+    display: none;
+  }
+  .foodpanda-section .text-foodpanda {
+    width: 80% !important;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-page .right-section {
+    height: 40%;
+  }
+  .main-page .left-section h1 {
+    font-size: 30px;
+  }
+  .order-section .zomato-section .text-zomato p, .order-section .zomato-section .text-zomato ul {
+    font-size: 18px;
+  }
+  .order-section .swiggy-section .text-swiggy p, .order-section .swiggy-section .text-swiggy ul {
+    font-size: 18px;
+  }
+  .order-section .dominos-section .text-dominos p, .order-section .dominos-section .text-dominos ul {
+    font-size: 18px;
+  }
+  .order-section .pizzahut-section {
+    background: #f4f4f4;
+  }
+  .order-section .pizzahut-section .text-pizzahut h1 {
+    color: black;
+  }
+  .order-section .pizzahut-section .text-pizzahut p, .order-section .pizzahut-section .text-pizzahut ul {
+    color: black;
+    font-size: 18px;
+  }
+  .order-section .foodpanda-section .text-foodpanda p, .order-section .foodpanda-section .text-foodpanda ul {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=order.css.map */
