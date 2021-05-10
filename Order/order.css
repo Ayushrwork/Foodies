@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Grandstander:wght@200;400;800&family=Oswald&family=Poppins:wght@300&family=Roboto:wght@300;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@200;400;800&family=Oswald&family=Poppins:wght@300&family=Roboto:wght@300;500&display=swap');
 :root {
   --text: Black;
   --bg: #f4f4f4;
@@ -57,7 +57,7 @@ nav .burger .fas {
 
 nav .nav-links {
   position: absolute;
-  width: 50%;
+  width: 30%;
   top: 0;
   background: white;
   top: 10vh;
@@ -75,7 +75,7 @@ nav .nav-links {
   align-items: center;
   -ms-flex-pack: distribute;
   -webkit-box-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
   -webkit-transition: -webkit-transform 0.45s ease-in-out;
@@ -88,7 +88,7 @@ nav .nav-links a {
   text-decoration: none;
   font-size: 22px;
   color: var(--text);
-  font-family: poppins , 'sans-serif';
+  font-family: poppins, 'sans-serif';
 }
 
 nav .nav-links a:hover {
@@ -125,11 +125,11 @@ nav .nav-links .nav-links.active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .main-page .left-section h1 {
@@ -143,10 +143,9 @@ nav .nav-links .nav-links.active {
 }
 
 .main-page .right-section img {
-  width: 90%;
+  width: 100%;
   height: 100%;
-  -o-object-fit: contain cover;
-     object-fit: contain cover;
+  object-fit: cover;
 }
 
 .order-section {
@@ -163,29 +162,26 @@ nav .nav-links .nav-links.active {
   height: 100vh;
 }
 
-
-
 .order-section .zomato-section a,
 .order-section .swiggy-section a,
 .order-section .foodpanda-section a,
 .order-section .dominos-section a,
-.order-section .pizzahut-section a{
+.order-section .pizzahut-section a {
   color: black;
-  
 }
 
 .order-section .zomato-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #CD212F;
+  background: #cd212f;
 }
 
 .order-section .zomato-section .img-zomato {
   width: 50%;
   height: 100%;
   background: url(./media/Zomato.jpg);
-  background-position: 0%  center;
+  background-position: 0% center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -199,13 +195,13 @@ nav .nav-links .nav-links.active {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .order-section .zomato-section .text-zomato h1 {
@@ -213,7 +209,8 @@ nav .nav-links .nav-links.active {
   font-family: roboto;
 }
 
-.order-section .zomato-section .text-zomato p, .order-section .zomato-section .text-zomato ul {
+.order-section .zomato-section .text-zomato p,
+.order-section .zomato-section .text-zomato ul {
   color: white;
   width: 80%;
   margin: auto;
@@ -226,7 +223,7 @@ nav .nav-links .nav-links.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #F6881F;
+  background: #f6881f;
 }
 
 .order-section .swiggy-section .img-swiggy {
@@ -248,13 +245,13 @@ nav .nav-links .nav-links.active {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .order-section .swiggy-section .text-swiggy h1 {
@@ -262,7 +259,8 @@ nav .nav-links .nav-links.active {
   font-family: roboto;
 }
 
-.order-section .swiggy-section .text-swiggy p, .order-section .swiggy-section .text-swiggy ul {
+.order-section .swiggy-section .text-swiggy p,
+.order-section .swiggy-section .text-swiggy ul {
   color: white;
   width: 80%;
   margin: auto;
@@ -297,13 +295,13 @@ nav .nav-links .nav-links.active {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .order-section .dominos-section .text-dominos h1 {
@@ -311,7 +309,8 @@ nav .nav-links .nav-links.active {
   font-family: roboto;
 }
 
-.order-section .dominos-section .text-dominos p, .order-section .dominos-section .text-dominos ul {
+.order-section .dominos-section .text-dominos p,
+.order-section .dominos-section .text-dominos ul {
   color: black;
   width: 80%;
   margin: auto;
@@ -346,13 +345,13 @@ nav .nav-links .nav-links.active {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .order-section .pizzahut-section .text-pizzahut h1 {
@@ -360,7 +359,8 @@ nav .nav-links .nav-links.active {
   font-family: roboto;
 }
 
-.order-section .pizzahut-section .text-pizzahut p, .order-section .pizzahut-section .text-pizzahut ul {
+.order-section .pizzahut-section .text-pizzahut p,
+.order-section .pizzahut-section .text-pizzahut ul {
   color: black;
   width: 80%;
   margin: auto;
@@ -373,7 +373,7 @@ nav .nav-links .nav-links.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #D61163;
+  background: #d61163;
 }
 
 .order-section .foodpanda-section .img-foodpanda {
@@ -395,13 +395,13 @@ nav .nav-links .nav-links.active {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .order-section .foodpanda-section .text-foodpanda h1 {
@@ -409,7 +409,8 @@ nav .nav-links .nav-links.active {
   font-family: roboto;
 }
 
-.order-section .foodpanda-section .text-foodpanda p, .order-section .foodpanda-section .text-foodpanda ul {
+.order-section .foodpanda-section .text-foodpanda p,
+.order-section .foodpanda-section .text-foodpanda ul {
   color: white;
   width: 100%;
   margin: auto;
@@ -417,27 +418,46 @@ nav .nav-links .nav-links.active {
   font-size: 22px;
   letter-spacing: 1px;
 }
+.btn {
+  padding: 5px;
+  border: 1px solid black;
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+}
+.btn:hover {
+  color: white !important;
+  background-color: black;
+}
 
 @media screen and (max-width: 800px) {
   .main-page {
-    -webkit-box-orient: vertical;
+    /* -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; */
+    justify-content: center;
+    align-items: center;
+    background: url(./media/order-home.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .main-page .right-section {
-    width: 100%;
-    height: 50%;
+    display: none;
   }
   .main-page .left-section {
     width: 100%;
     height: 40%;
   }
+  .main-page .left-section h1 {
+    color: aliceblue;
+    text-shadow: 2px 2px #000000;
+  }
   .order-section .zomato-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .order-section .zomato-section .img-zomato {
     display: none;
@@ -450,8 +470,8 @@ nav .nav-links .nav-links.active {
   .swiggy-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .swiggy-section .img-swiggy {
     display: none;
@@ -464,8 +484,8 @@ nav .nav-links .nav-links.active {
   .dominos-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .dominos-section .img-dominos {
     display: none;
@@ -477,8 +497,8 @@ nav .nav-links .nav-links.active {
   .pizzahut-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .pizzahut-section .img-pizzahut {
     display: none;
@@ -490,8 +510,8 @@ nav .nav-links .nav-links.active {
   .foodpanda-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .foodpanda-section .img-foodpanda {
     display: none;
@@ -509,13 +529,16 @@ nav .nav-links .nav-links.active {
   .main-page .left-section h1 {
     font-size: 30px;
   }
-  .order-section .zomato-section .text-zomato p, .order-section .zomato-section .text-zomato ul {
+  .order-section .zomato-section .text-zomato p,
+  .order-section .zomato-section .text-zomato ul {
     font-size: 18px;
   }
-  .order-section .swiggy-section .text-swiggy p, .order-section .swiggy-section .text-swiggy ul {
+  .order-section .swiggy-section .text-swiggy p,
+  .order-section .swiggy-section .text-swiggy ul {
     font-size: 18px;
   }
-  .order-section .dominos-section .text-dominos p, .order-section .dominos-section .text-dominos ul {
+  .order-section .dominos-section .text-dominos p,
+  .order-section .dominos-section .text-dominos ul {
     font-size: 18px;
   }
   .order-section .pizzahut-section {
@@ -524,11 +547,13 @@ nav .nav-links .nav-links.active {
   .order-section .pizzahut-section .text-pizzahut h1 {
     color: black;
   }
-  .order-section .pizzahut-section .text-pizzahut p, .order-section .pizzahut-section .text-pizzahut ul {
+  .order-section .pizzahut-section .text-pizzahut p,
+  .order-section .pizzahut-section .text-pizzahut ul {
     color: black;
     font-size: 18px;
   }
-  .order-section .foodpanda-section .text-foodpanda p, .order-section .foodpanda-section .text-foodpanda ul {
+  .order-section .foodpanda-section .text-foodpanda p,
+  .order-section .foodpanda-section .text-foodpanda ul {
     font-size: 18px;
   }
 }
